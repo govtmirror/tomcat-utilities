@@ -39,7 +39,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cida.maven.url>http://internal.cida.usgs.gov/nexus</cida.maven.url>
 	</properties>
 
 	<scm>
@@ -57,12 +56,12 @@
 		<repository>
 			<id>cida-releases</id>
 			<name>CIDA Releases</name>
-			<url>${cida.maven.url}/content/repositories/cida-releases</url>
+			<url>http://internal.cida.usgs.gov/nexus/content/repositories/cida-releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>cida-snapshots</id>
 			<name>CIDA Snapshots</name>
-			<url>${cida.maven.url}/content/repositories/cida-snapshots</url>
+			<url>http://internal.cida.usgs.gov/nexus/content/repositories/cida-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -70,7 +69,7 @@
 		<repository>
 			<id>nexus</id>
 			<name>CIDA Nexus</name>
-			<url>${cida.maven.url}/content/groups/public/</url>
+			<url>http://internal.cida.usgs.gov/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
 
@@ -78,7 +77,7 @@
 		<pluginRepository>
 			<id>plugin-nexus</id>
 			<name>CIDA Plugin repo</name>
-			<url>${cida.maven.url}/content/groups/public/</url>
+			<url>http://internal.cida.usgs.gov/nexus/content/groups/public/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -101,13 +100,13 @@
 		<dependency>
 			<groupId>rhino</groupId>
 			<artifactId>js</artifactId>
-			<version>1.6R5</version>
+			<version>1.6R7</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.8.2</version>
+			<version>4.11</version>
 			<type>jar</type>
 			<scope>test</scope>
 		</dependency>
