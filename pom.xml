@@ -4,7 +4,7 @@
 
 	<groupId>gov.usgs.cida</groupId>
 	<artifactId>tomcat-utilities</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>tomcat-utilities</name>
@@ -44,7 +44,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/USGS-CIDA/tomcat-utilities.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/USGS-CIDA/tomcat-utilities.git</developerConnection>
-		<url>https://github.com/USGS-CIDA/tomcat-utilities</url>
+		<url>https://github.com/USGS-CIDA/tomcat-utilities/</url>
 	</scm>
 
 	<ciManagement>
