@@ -43,7 +43,7 @@
 
 	<scm>
 		<connection>scm:git:https://github.com/USGS-CIDA/tomcat-utilities.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:USGS-CIDA/tomcat-utilities.git</developerConnection>
+		<developerConnection>scm:git:ssh://git@github.com/USGS-CIDA/tomcat-utilities.git</developerConnection>
 		<url>https://github.com/USGS-CIDA/tomcat-utilities</url>
 	</scm>
 
