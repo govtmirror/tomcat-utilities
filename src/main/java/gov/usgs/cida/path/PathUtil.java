@@ -1,5 +1,7 @@
 package gov.usgs.cida.path;
 
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -65,6 +67,12 @@ public class PathUtil {
 			while (StringUtils.contains(cleanPath, "//")) {
 				cleanPath = StringUtils.replace(cleanPath, "//", "/");
 			}
+			try {
+				cleanPath = URLDecoder.decode(cleanPath, "UTF-8");
+			} catch (Exception e) {
+				log.error("Exception when trying to decode cleanPath: " + cleanPath + " for exception: " + e.getMessage() );
+			}
+			
 		}
 		if (null != cleanPath && !cleanPath.equals(cleanBasePath) && cleanPath.contains(cleanBasePath)) {
 			cleanPath = StringUtils.trimToNull(StringUtils.strip(cleanPath.substring(cleanPath.indexOf(cleanBasePath) + cleanBasePath.length()), "/"));
