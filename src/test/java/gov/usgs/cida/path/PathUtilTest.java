@@ -68,6 +68,29 @@ public class PathUtilTest {
 	}
 	
 	@Test
+	public void testUnescapePathVariables() {
+		String param1 = "utcMillis";
+		
+		String expected = "Riv Mi 255";
+		String requestURI = "/gcmrc-labs/time/Riv%20Mi%20255";
+		String basePath = "time";
+		String actual = PathUtil.calculateRestOfURI(requestURI, basePath, param1).get(param1);
+		assertEquals(expected, actual);
+		
+		expected = "Riv Mi 255";
+		requestURI = "/gcmrc-labs/time/Riv Mi 255";
+		basePath = "time";
+		actual = PathUtil.calculateRestOfURI(requestURI, basePath, param1).get(param1);
+		assertEquals(expected, actual);
+		
+		expected = "Riv% Mi 255";
+		requestURI = "/gcmrc-labs/time/Riv% Mi 255";
+		basePath = "time";
+		actual = PathUtil.calculateRestOfURI(requestURI, basePath, param1).get(param1);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
 	public void testGetRestOfPath() {
 		String param1 = "utcMillis";
 		String param2 = "zone";
