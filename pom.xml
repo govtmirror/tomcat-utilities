@@ -4,7 +4,7 @@
 
 	<groupId>gov.usgs.cida</groupId>
 	<artifactId>tomcat-utilities</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 	<packaging>jar</packaging>
 
 	<name>tomcat-utilities</name>
