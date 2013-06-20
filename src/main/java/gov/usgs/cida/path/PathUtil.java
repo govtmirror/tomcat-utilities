@@ -1,7 +1,6 @@
 package gov.usgs.cida.path;
 
 import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
